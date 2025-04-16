@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "REFRESH EXTENSION - Apresentação de Abas",
+  "version": "1.0",
+  "description": "Alterna entre abas automaticamente a cada 30 segundos e recarrega todas a cada 30 minutos.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting",
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
